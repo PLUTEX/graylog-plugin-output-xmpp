@@ -1,6 +1,6 @@
 # XMPP output plugin for Graylog
 
-[![Build Status](https://travis-ci.org/PLUTEX/graylog-plugin-output-xmpp?branch=master)](https://travis-ci.org/PLUTEX/graylog-plugin-output-xmpp)
+[![Build Status](https://api.travis-ci.org/PLUTEX/graylog-plugin-output-xmpp.svg?branch=master)](https://travis-ci.org/PLUTEX/graylog-plugin-output-xmpp)
 
 Graylog plugin to output messages to an XMPP server.
 
