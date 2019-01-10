@@ -53,6 +53,7 @@ public class XMPPOutput implements MessageOutput {
 	private static final Pattern tagPattern = Pattern.compile("\\{(\\w+)\\}");
 
 	private final Configuration config;
+	private final String nodeId;
 	private XMPPTCPConnection connection;
 	private static AtomicBoolean isRunning = new AtomicBoolean(false);
 
@@ -61,6 +62,7 @@ public class XMPPOutput implements MessageOutput {
 		LOG.info("Initializing XMPP Output plugin");
 
 		this.config = config;
+		this.nodeId = nodeId.anonymize();
 		connect();
 		isRunning.set(true);
 	}
@@ -98,7 +100,7 @@ public class XMPPOutput implements MessageOutput {
 			.setPort(config.getInt(CK_PORT))
 			.setUsernameAndPassword(config.getString(CK_USERNAME), config.getString(CK_PASSWORD))
 			.setXmppDomain(serviceName)
-			.setResource(Resourcepart.from(config.getString(CK_RESOURCE)))
+			.setResource(Resourcepart.from(nodeId))
 			.setSendPresence(false);
 
 		if (config.getBoolean(CK_ACCEPT_SELFSIGNED)) {
@@ -235,7 +237,7 @@ public class XMPPOutput implements MessageOutput {
 			cr.addField(new TextField(CK_RESOURCE,
 				"Resource",
 				"graylog",
-				"Resource to use for connection and nickname to use in MUCs, e. g. 'resource' of the JID 'user@example.com/resource'.",
+				"Nickname to use in MUCs, e. g. 'resource' of the JID 'user@example.com/resource'.",
 				ConfigurationField.Optional.NOT_OPTIONAL));
 
 			cr.addField(new TextField(CK_PASSWORD,
