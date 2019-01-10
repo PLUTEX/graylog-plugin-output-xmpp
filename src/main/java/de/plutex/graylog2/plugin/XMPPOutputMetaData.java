@@ -26,7 +26,7 @@ public class XMPPOutputMetaData implements PluginMetaData {
 
     @Override
     public URI getURL() {
-        return URI.create("https://github.com/plutex/graylog-xmpp-output-plugin");
+        return URI.create("https://github.com/plutex/graylog-plugin-output-xmpp");
     }
 
     @Override

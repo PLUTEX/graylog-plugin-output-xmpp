@@ -3,16 +3,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.plutex.graylog2</groupId>
-    <artifactId>graylog-xmpp-output-plugin</artifactId>
-    <version>0.1</version>
+    <artifactId>graylog-plugin-output-xmpp</artifactId>
+    <version>0.2</version>
 
     <name>${project.artifactId}</name>
     <description>Graylog Jabber/XMPP Output plugin</description>
 
     <scm>
-        <connection>scm:git:https://github.com:plutex/graylog-xmpp-output-plugin.git</connection>
-        <developerConnection>scm:git:git@github.com:plutex/graylog-xmpp-output-plugin.git</developerConnection>
-	<url>https://github.com/plutex/graylog-xmpp-output-plugin</url>
+        <connection>scm:git:https://github.com:plutex/graylog-plugin-output-xmpp.git</connection>
+        <developerConnection>scm:git:git@github.com:plutex/graylog-plugin-output-xmpp.git</developerConnection>
+	<url>https://github.com/plutex/graylog-plugin-output-xmpp</url>
         <tag>2.4.0</tag>
     </scm>
 
