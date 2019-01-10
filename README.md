@@ -24,3 +24,14 @@ account. This enables you to have multiple instances of the plugin (e.g. with
 differing message formats) in the same cluster. This prefix is joined with the
 anonymized Graylog node ID, so that multiple nodes in the cluster can establish
 XMPP connections simultaneously.
+
+License
+-------
+
+Copyright (c) 2018 PLUTEX GmbH.
+
+Based largely on the [Jabber alarm callback plugin](https://github.com/graylog-labs/graylog-plugin-jabber), Copyright (c) 2014-2018 by Graylog, Inc.
+
+This library is licensed under the GNU General Public License, Version 3.0.
+
+See https://www.gnu.org/licenses/gpl-3.0.html or the LICENSE.txt file in this repository for the full license text.
